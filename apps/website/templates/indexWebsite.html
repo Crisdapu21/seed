@@ -1,0 +1,26 @@
+{% extends "baseWebsite.html" %}
+    {% load staticfiles %}
+    {% block titlepage %}
+        Index
+    {% endblock titlepage %}
+    {% block contentbody %}
+         <h1>Seed Project</h1>
+         <ul>
+         	{% if request.user.is_authenticated %}
+            <h1>Welcome {{request.user}}</h1>
+         	<li>
+         		<a href="{% url 'logoutView' %}">
+         			Logout
+         		</a>
+         	</li>
+         	{% else %}
+         	<li>
+         		<a href="{% url 'loginView' %}">
+         			Login
+         		</a>
+     		</li>
+         	{% endif %}
+
+         	
+         </ul>           
+    {% endblock contentbody %}

@@ -1,0 +1,14 @@
+{% extends "baseUser.html" %}
+    {% load staticfiles %}
+    {% block titlepage %}
+        Register
+    {% endblock titlepage %}
+    {% block contentbody %}
+        <form method="POST">
+          {% csrf_token %}
+          {{register_form.as_p}}    
+          <button type="submit" name="register_form">Register</button>
+        </form>
+        
+                      
+    {% endblock contentbody %}
