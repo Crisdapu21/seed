@@ -26,7 +26,9 @@ Say what the step will be
 ```
 cd seed
 ```
-
+```
+pip3 install -r requerimients/staging.txt
+```
 ```
 ./migrate.py
 ```
