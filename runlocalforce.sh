@@ -1,5 +1,5 @@
 #!/bin/bash
-ps ax | grep "0.0.0.0:7012" | grep -v grep | awk '{print $1}' | xargs kill
+ps ax | grep "0.0.0.0:9999" | grep -v grep | awk '{print $1}' | xargs kill
 clear
 echo "......................................................................"
 echo "By AppFactory..."

@@ -13,6 +13,10 @@ What things you need to install the software and how to install them
 ```
 
  - Python 3.x
+ - Django 
+ - Pillow
+ - pytz
+ - Unipath
 
 ```
 
@@ -35,12 +39,12 @@ pip3 install -r requerimients/staging.txt
 And later
 
 ```
-./runlocal.sh
+./runlocalforce.sh
 ```
 Or with output console
 
 ```
-python3 manage.py runserver settings=seed.settings.local
+./runlocal.sh
 ```
 Finally enter the following url in your browser
 ```
@@ -59,7 +63,7 @@ Add additional notes about how to deploy this on a live system
 
  
 ## Versioning
-See more in [CHANGELOG](seed/CHANGELOG.MG)
+See more in [CHANGELOG](CHANGELOG.md)
 
 
  
